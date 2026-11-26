@@ -9,12 +9,12 @@ on:
 #should be inside worksflows
 jobs:
   #say-hello is first job 
-  say-hello:
+   say-hello:
     # create an Ephemerls container with ubuntu running
-    runs-on: ubuntu-latest
-    steps:
-      - name: say hello to everyone
-        run: echo "hello newone"
+     runs-on: ubuntu-latest
+     steps:
+       - name: say hello to everyone
+         run: echo "hello newone"
    
 
 
