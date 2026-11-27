@@ -2,7 +2,8 @@
 #workflows should have name 
 name: Hello
 #on tells when worksflows run
-on:  
+on: 
+ push: 
  workflow_dispatch:
     
 #jobs tells what workflow should do ,there can be one or more jobs hence we write
