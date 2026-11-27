@@ -11,6 +11,11 @@ jobs:
 #this step automatically clone the code of the current branch into runner
      - name: check code
        uses: actions/checkout@v4
+#this step will install python
+     - name: install python
+       uses: actions/python@v5
+       with:
+         python-version: '3.14'
  #this step will install linter
      - name: Install linter
        run: pip install ruff
