@@ -3,7 +3,7 @@ name: Auto Linter
 on: 
  push:
    paths: 
-     - "**/*.py"
+     - "**/*.py" #check .py file all location subfolder , root  
 jobs:
   code:
    runs-on: ubuntu-latest
