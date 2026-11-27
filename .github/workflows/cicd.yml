@@ -23,7 +23,7 @@ jobs:
     - name: Testing a code
       run: echo "code is testing"
   deploy:
-   needs: [code,build]
+   needs: [build,testing]
    runs-on: ubuntu-latest
    steps:
      - name: deploying code
