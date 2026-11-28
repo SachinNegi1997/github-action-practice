@@ -5,6 +5,15 @@ on:
   branches: [master]
 
 jobs:
+  code_lint:
+   runs-on: ubuntu-latest
+   steps:
+     - name: checkoucode
+       uses: actions/checkout@v7
+     - name: install linter
+       run: pip install ruff
+     - name: scan the code
+       run: ruff check . 
   build_and_push:
    runs-on: ubuntu-latest
    steps:
